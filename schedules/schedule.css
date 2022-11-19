@@ -1,0 +1,15 @@
+.has-error {
+    width: 100%;
+    margin-top: 0.25rem;
+    color: red;
+}
+
+.scheduleSearchBar {
+    margin-top: 1rem;
+}
+
+.schedule-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

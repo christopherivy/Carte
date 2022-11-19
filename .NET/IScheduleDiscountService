@@ -1,0 +1,16 @@
+
+
+namespace Services
+{
+    public interface IScheduleDiscountService
+    {
+        int Add(ScheduleAddRequest model, int userId);
+        void Delete(int id);
+        Schedule GetById(int id);
+        Paged<Schedule> GetCreatedBy(int pageIndex, int pageSize, int id);
+        Paged<Schedule> SearchByCreatedBy(int pageIndex, int pageSize, int id, string query);
+        Paged<Schedule> GetOrgId(int pageIndex, int pageSize, int id, bool isDeleted = false);
+        Paged<Discount> GetByScheduleId(int pageIndex, int pageSize, int id);
+        void Update(ScheduleUpdateRequest model, int userId); 
+    }
+} 
